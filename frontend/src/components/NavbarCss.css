@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    text-align: center;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 8px; /* Điều chỉnh khoảng cách giữa icon và tên người dùng */
+  }
