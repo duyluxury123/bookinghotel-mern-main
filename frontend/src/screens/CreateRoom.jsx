@@ -104,7 +104,7 @@ const CreateRoom = () => {
 
     return (
         <Fragment>
-            <Meta title="Create Room" />
+            <Meta title="Tạo phòng" />
             <div className="flex">
                 <SideBar />
                 {isLoading ? <Loader /> : (

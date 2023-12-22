@@ -18,12 +18,12 @@ exports.createBooking = catchAsyncErrors(async(req, res, next) => {
 
     const hotel = await Hotel.findById(req.params.id);
     if (!hotel) {
-        return next(new ErrorHandler("Hotel not found", 404));
+        return next(new ErrorHandler("Không tìm thấy khách sạn", 404));
     }
 
     const room = await Room.findById(req.params.room);
     if (!room) {
-        return next(new ErrorHandler("Room not found", 404))
+        return next(new ErrorHandler("Không tìm thấy phòng", 404))
     }
 
     const isHotelsRoom = hotel.rooms.includes(room.id);

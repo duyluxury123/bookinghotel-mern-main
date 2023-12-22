@@ -55,7 +55,7 @@ const AllHotels = () => {
 
     return (
         <Fragment>
-            <Meta title="All Hotels" />
+            <Meta title="Tất cả khách sạn" />
             <div className="flex">
                 <SideBar />
                 <Fragment>

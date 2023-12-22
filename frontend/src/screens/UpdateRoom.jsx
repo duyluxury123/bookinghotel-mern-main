@@ -114,7 +114,7 @@ const UpdateRoom = () => {
 
     return (
         <Fragment>
-            <Meta title="Update Room" />
+            <Meta title="Cập nhật phòng" />
             <div className="flex">
                 <SideBar />
                 {isLoading ? <Loader /> : (

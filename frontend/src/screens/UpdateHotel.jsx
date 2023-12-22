@@ -107,7 +107,7 @@ const UpdateHotel = () => {
 
     return (
         <Fragment>
-            <Meta title="Update Hotel" />
+            <Meta title="Cập nhật khách sạn" />
             <div className="flex">
                 <SideBar />
                 {isLoading ? <Loader /> : (

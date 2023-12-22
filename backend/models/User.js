@@ -56,7 +56,7 @@ userSchema.methods.comparePassword = async function (givenPassword) {
     return await bcrypt.compare(givenPassword, this.password);
 }
 
-// tạo mã thông báo xác thực
+// send token
 userSchema.methods.generateAuthToken = function () {
     return jwt.sign({id: this._id}, process.env.JWT_SECRET, {expiresIn: process.env.JWT_EXPIRE} )
 }

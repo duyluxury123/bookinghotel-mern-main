@@ -64,14 +64,14 @@ const UpdateProfile = () => {
     
     return (
         <Fragment>
-            <Meta title="Account Setting" />
+            <Meta title="Cài đặt tài khoản" />
             <Fragment >
                 {isLoading ? <Loader /> : (
                     <div className="mx-auto px-4 md:px-10 lg:px-20 xl:px-48 mt-4 flex flex-col md:flex-row justify-between pb-6 h-[calc(100vh-115px)]">
                          <img src={Profile} alt="avatar" className="w-32 h-32 mx-auto mt-6" />
                         <div className="w-full h-full mb-6 flex flex-col border-r border-solid border-gray-200">
                             <Link to="/account" className="text-blue-500 hover:text-blue-700">
-                                <ArrowBackIosNewIcon fontSize="small" /> <span>Go Back</span>
+                                <ArrowBackIosNewIcon fontSize="small" /> <span>Quay lại</span>
                             </Link>
                             <h2 className="text-2xl font-semibold my-5 text-gray-800 ml-3">Cập nhật tài khoản</h2>
                             <p className=" font-semibold text-gray-700 mb-1 ml-5">Name: <span className="capitalize font-medium font-mono ml-2">{user?.name}</span><button onClick={() => setIsNameOpen(!isNameOpen)} className="font-medium text-sm ml-4 mb-1 text-blue-600 hover:text-blue-800">Edit</button> </p>

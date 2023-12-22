@@ -33,7 +33,7 @@ const SignUp = () => {
 
     return (
         <Fragment>
-            <Meta title="Sign Up" />
+            <Meta title="Đăng Ký" />
             <Fragment>
                 {isLoading ? <Loader /> : (
                     <div className="mx-auto px-4 md:px-10 lg:px-20 xl:px-48 mt-4">

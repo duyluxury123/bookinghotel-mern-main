@@ -11,7 +11,7 @@ const BookingSuccess = () => {
 
     return (
         <Fragment>
-            <Meta title="Booking Success" />
+            <Meta title="Đặt phòng thành công" />
             <div className="flex flex-col justify-center items-center h-[calc(100vh-97px)]">
                 <h2 className="text-2xl -mt-48 mb-6 text-center">Đặt phòng thành công.</h2>
                 <button className="bg-red-400 hover:bg-red-500 py-3 px-6 rounded text-green-50 transition duration-200" onClick={() => navigate('/me/bookings')}>Xem lịch đặt của bạn</button>

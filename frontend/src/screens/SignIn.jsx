@@ -29,7 +29,7 @@ const SignIn = () => {
 
     return (
         <Fragment>
-            <Meta title="Sign In" />
+            <Meta title="Đăng Nhập" />
             <Fragment>
                 {isLoading ? <Loader /> : (
                     <div className="mx-auto px-4 md:px-10 lg:px-20 xl:px-48 mt-4">

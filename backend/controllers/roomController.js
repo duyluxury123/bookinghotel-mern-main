@@ -6,7 +6,7 @@ const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const ErrorHandler = require('../utils/errorHandler');
 const getDataUri = require('../utils/getDataUri');
 
-// create room -- admin
+// tao phong -- admin
 exports.createRoom = catchAsyncErrors(async (req, res, next) => {
     const hotelId = req.params.id;
     const { number, name, type, specification, pricePerDay } = req.body;

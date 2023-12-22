@@ -104,7 +104,10 @@ export const getAllHotels = () => async(dispatch) => {
         dispatch(setLoader(true));
         const { data } = await axios.get(`/api/v1/hotels`);
 
-        dispatch(setAllHotels(data.hotels));
+        // Sắp xếp danh sách khách sạn theo ngày tạo giảm dần
+        const sortedHotels = data.hotels.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+        dispatch(setAllHotels(sortedHotels));
         dispatch(setLoader(false));
     } catch (err) {
         dispatch(setLoader(false));

@@ -36,7 +36,7 @@ exports.uploadHotelPictures = catchAsyncErrors(async(req, res, next) => {
     const hotel = await Hotel.findById(id);
 
     if (!hotel) {
-        return next(new ErrorHandler('Hotel not found', 404));
+        return next(new ErrorHandler('Không tìm thấy khách sạn', 404));
     }
 
 
@@ -121,7 +121,7 @@ exports.deleteHotel = catchAsyncErrors(async(req, res, next) => {
     }
 
 
-    // Xóa chi tiết đặt phòng khách sạn
+    // Xóa đặt phòng khách sạn
     const bookings = await Booking.find({
         hotel: hotel.id
     })

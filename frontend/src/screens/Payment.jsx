@@ -91,7 +91,7 @@ const Payment = () => {
 
     return (
         <Fragment>
-            <Meta title="Payment" />
+            <Meta title="Thanh toán" />
             <div className="mx-auto px-4 md:px-10 lg:px-20 xl:px-48 mt-4">
                 <h2 className="text-2xl text-center font-medium mb-5 mt-40">Thanh toán</h2>
                 <div className="px-1 sm:px-3 flex justify-center">

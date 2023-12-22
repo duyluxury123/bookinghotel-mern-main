@@ -89,7 +89,7 @@ const CreateHotel = () => {
 
     return (
         <Fragment>
-            <Meta title="Create Hotel" />
+            <Meta title="Tạo khách sạn" />
             <div className="flex">
                 <SideBar />
                 {isLoading ? <Loader /> : (

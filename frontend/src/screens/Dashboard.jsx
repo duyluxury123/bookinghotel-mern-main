@@ -129,7 +129,7 @@ const Dashboard = () => {
 
   return (
     <Fragment>
-      <Meta title="Admin Dashboard" />
+      <Meta title="Bảng điều khiển" />
       <div className="flex">
         <SideBar />
         <div className="mx-auto w-full lg:mt-16 sm:mt-8 mt-5 md:mt-12">

@@ -90,7 +90,7 @@ const Booking = () => {
 
   return (
     <Fragment>
-      <Meta title="Book Room" />
+      <Meta title="Đặt phòng" />
       <Fragment>
         {isLoading ? (
           <Loader />

@@ -32,7 +32,7 @@ const AllUsers = () => {
 
     return (
         <Fragment>
-            <Meta title="All Users" />
+            <Meta title="Tất cả người dùng" />
             <div className="flex">
                 <SideBar />
                 <Fragment>
